@@ -5,6 +5,8 @@
   <title>Basic Mappa Tutorial</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js" type="text/javascript"></script>
   <script src="https://unpkg.com/mappa-mundi/dist/mappa.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/leaflet@latest/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
 </head>
 
 <body>
@@ -16,7 +18,7 @@
     lat: 60, 
     lng: 250, 
     zoom: 2, 
-    style: "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png"
+    style: "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"
   }
   function setup(){
     canvas = createCanvas(640,640); 
